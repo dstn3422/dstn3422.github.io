@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+## Katas:
+### [A Chain adding function](https://www.codewars.com/kata/539a0e4d85e3425cb0000a88)
 
 You can use the [editor on GitHub](https://github.com/dstn3422/dstn3422.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
