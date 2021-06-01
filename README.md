@@ -63,6 +63,16 @@ function chained(functions){
   };
 }
 ```
+```javascript
+function chained(functions){
+
+  return function(input){
+    for(let i = 0; i < functions.length; i++){
+      functions[i](input);
+    }
+  };
+}
+```
 3. Then we have to update the value of input for each function we execute on it.
 ```javascript
 function chained(functions){
