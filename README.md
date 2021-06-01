@@ -29,14 +29,14 @@ Syntax highlighted code block
 ## A Chain adding function
 
 The task:
-![Image](https://github.com/dstn3422/dstn3422.github.io/tree/main/assets/chain.png)
+![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/chain.png)
 
 ## Unary function chainer
 
 The task:
-![Image](https://github.com/dstn3422/dstn3422.github.io/tree/main/assets/Unary.png)
+![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/Unary.png)
 
 ## Calculating with Functions
 
 The task:
-![Image](https://github.com/dstn3422/dstn3422.github.io/tree/main/assets/calc.png)
+![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/calc.png)
