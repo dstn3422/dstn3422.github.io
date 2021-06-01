@@ -34,7 +34,7 @@ The task:
 ## Unary function chainer
 
 The task:
-![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/Unary.png)
+![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/unary.png)
 
 ## Calculating with Functions
 
