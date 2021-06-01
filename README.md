@@ -3,7 +3,7 @@
 [Codewars link](https://www.codewars.com/kata/539a0e4d85e3425cb0000a88)
 - ### [Unary function chainer kata](#unary-function-chainer)
 [Codewars link](https://www.codewars.com/kata/54ca3e777120b56cb6000710)
-- ### [Calculating with Functions kata](#calculating_with_functions)
+- ### [Calculating with Functions kata](#calculating-with-functions)
 [Codewars link](https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39)
 
 ## A Chain adding function
@@ -11,6 +11,43 @@
 The task:
 ![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/chain.png)
 
+How to:
+
+First of all we need our `add` function to return a function that takes a single argument so that we can take all the variables and values inside the parenthesis as arguments. The technique is called currying. So let's do that:
+```javascript
+const add = (n) => {
+  const fx = (x) => ;
+  
+  return fx;
+}
+```
+Now our `add` function will return a function, however this will only take care of two parenthesis and we need it to take all of them. And what do we do when we don't know the number of times we need to call a function to get our desired result? That's right, recursion!
+```javascript
+const add = (n) => {
+  const fx = (x) => add(n + x);
+  
+  return fx;
+}
+```
+We only got one thing to take care of now, the last call of our recursive function.
+Let's take a look of what happens so far with this example:
+`add(1)(2)(3)`
+The `add` function will be called with the number 1 as an argument, then it will call the `fx` function which will take the next number, 2, add 1 and 2 and call the add function, now with 3 as a sole argument. After the first call of the `add` function we will get:
+`add(3)(3)`
+Now same thing happens again and we will get:
+`add(6)`
+But this time the `fx` function won't get any arguments, since there are no more left. So the `add` will return a function, `fx`. But we need the value of `n` in this case. 
+
+Luckily for us functions are objects under the hood in JavaScript. Objects have a method called valueOf and if we create a valueOf method for the `fx` function it will return that value:
+```javascript
+const add = (n) => {
+  const fx = (x) => add(n + x);
+  fx.valueOf = () => n;
+  
+  return fx;
+}
+```
+And voila, it's working!
 ## Unary function chainer
 
 The task:
