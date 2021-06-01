@@ -52,7 +52,7 @@ function chained(functions){
 
   return function(input){
     for(let i = 0; i < functions.length; i++){
-      
+      functions[i](input);
     }
   };
 }
@@ -68,7 +68,8 @@ function chained(functions){
   };
 }
 ```
-Note: this might make our function impure if the input passed as reference (in case of objects and arrays). 
+Note: this might make our function impure if the input passed as reference (in case of objects and arrays).
+
 4. Finally we return the final value.
 ```
 function chained(functions){
