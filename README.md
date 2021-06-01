@@ -35,15 +35,9 @@ The task:
 
 The task:
 ![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/unary.png)
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
+
 How to:
-1. To get the (input) we need the `chained` function to return a function.
+To get the (input) we need the `chained` function to return a function.
 ```javascript
 function chained(functions){
 
@@ -52,7 +46,7 @@ function chained(functions){
 ```
 Now our anonymous function that is returned from the chained function will take the input as parameter.
 
-2. We need to execute each function in the functions array.
+We need to execute each function in the functions array.
 ```javascript
 function chained(functions){
 
@@ -73,7 +67,7 @@ function chained(functions){
   };
 }
 ```
-3. Then we have to update the value of input for each function we execute on it.
+Then we have to update the value of input for each function we execute on it.
 ```javascript
 function chained(functions){
 
@@ -86,7 +80,7 @@ function chained(functions){
 ```
 Note: this might make our function impure if the input passed as reference (in case of objects and arrays).
 
-4. Finally we return the final value.
+Finally we return the final value.
 ```javascript
 function chained(functions){
 
