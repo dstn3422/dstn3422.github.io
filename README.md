@@ -57,16 +57,6 @@ function chained(functions){
   };
 }
 ```
-```javascript
-function chained(functions){
-
-  return function(input){
-    for(let i = 0; i < functions.length; i++){
-      functions[i](input);
-    }
-  };
-}
-```
 Then we have to update the value of input for each function we execute on it.
 ```javascript
 function chained(functions){
@@ -92,6 +82,10 @@ function chained(functions){
     return input;
   };
 }
+```
+We can refactor it and make it look more professional by using arrow functions and the array reduce method. And don't forget to rename every identifier to a single letter so that the next person reading it will have no idea wtf is going on but hey, at least it's a one liner and that's the most important thing in a clean code, right?
+```javascript
+const chained = (f) => (i) => f.reduce((r,c) => c(r), i);
 ```
 ## Calculating with Functions
 
