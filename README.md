@@ -37,6 +37,7 @@ The task:
 ![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/unary.png)
 
 How to:
+
 To get the (input) we need the `chained` function to return a function.
 ```javascript
 function chained(functions){
@@ -44,9 +45,9 @@ function chained(functions){
   return function(input){};
 }
 ```
-Now our anonymous function that is returned from the chained function will take the input as parameter.
+Now our anonymous function that is returned from the `chained` function will take the `input` as parameter.
 
-We need to execute each function in the functions array.
+We need to execute each function in the `functions` array.
 ```javascript
 function chained(functions){
 
@@ -57,7 +58,7 @@ function chained(functions){
   };
 }
 ```
-Then we have to update the value of input for each function we execute on it.
+Then we have to update the value of `input` for each function we execute on it.
 ```javascript
 function chained(functions){
 
@@ -68,7 +69,7 @@ function chained(functions){
   };
 }
 ```
-Note: this might make our function impure if the input passed as reference (in case of objects and arrays).
+Note: this might make our function impure if the `input` is passed as reference (in case of objects and arrays).
 
 Finally we return the final value.
 ```javascript
