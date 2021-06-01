@@ -69,7 +69,7 @@ function chained(functions){
   };
 }
 ```
-Note: this might make our function impure if the `input` is passed as reference (in case of objects and arrays).
+Note: this might make our function impure if the `input` is passed as reference (in case of objects and arrays this function will modify the original variable we are passing to it).
 
 Finally we return the final value.
 ```javascript
