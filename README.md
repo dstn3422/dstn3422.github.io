@@ -1,6 +1,8 @@
 # Katas:
-## [A Chain adding function](#chain-adding-function)
-### [Codewars link](https://www.codewars.com/kata/539a0e4d85e3425cb0000a88)
+* ## [A Chain adding function kata](#a-chain-adding-function)
+[Codewars link](https://www.codewars.com/kata/539a0e4d85e3425cb0000a88)
+* ## [Unary function chainer kata](#unary-function-chainer)
+[Codewars link](https://www.codewars.com/kata/54ca3e777120b56cb6000710)
 
 You can use the [editor on GitHub](https://github.com/dstn3422/dstn3422.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -30,14 +32,10 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## A Chain adding function
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dstn3422/dstn3422.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The task:
 
-### Support or Contact
+## Unary function chainer
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-## Chain adding function
-
-Task image here
+The task:
