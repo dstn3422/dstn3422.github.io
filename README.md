@@ -35,7 +35,13 @@ The task:
 
 The task:
 ![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/unary.png)
-
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
 How to:
 1. To get the (input) we need the `chained` function to return a function.
 ```javascript
