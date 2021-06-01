@@ -24,21 +24,19 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 ## A Chain adding function
 
 The task:
-![Image](https://github.com/dstn3422/dstn3422.github.io/assets/chain.png)
+![Image](https://github.com/dstn3422/dstn3422.github.io/tree/main/assets/chain.png)
 
 ## Unary function chainer
 
 The task:
-![Image](https://github.com/dstn3422/dstn3422.github.io/assets/unary.png)
+![Image](https://github.com/dstn3422/dstn3422.github.io/tree/main/assets/Unary.png)
 
 ## Calculating with Functions
 
 The task:
-![Image](https://github.com/dstn3422/dstn3422.github.io/assets/calc.png)
+![Image](https://github.com/dstn3422/dstn3422.github.io/tree/main/assets/calc.png)
