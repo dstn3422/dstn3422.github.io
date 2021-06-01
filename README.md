@@ -45,6 +45,7 @@ function chained(functions){
 }
 ```
 Now our anonymous function that is returned from the chained function will take the input as parameter.
+
 2. We need to execute each function in the functions array.
 ```
 function chained(functions){
