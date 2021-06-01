@@ -36,6 +36,51 @@ The task:
 The task:
 ![Image](https://raw.githubusercontent.com/dstn3422/dstn3422.github.io/main/assets/unary.png)
 
+How to:
+1. To get the (input) we need the `chained` function to return a function.
+```
+function chained(functions){
+
+  return function(input){};
+}
+```
+Now our anonymous function that is returned from the chained function will take the input as parameter.
+2. We need to execute each function in the functions array.
+```
+function chained(functions){
+
+  return function(input){
+    for(let i = 0; i < functions.length; i++){
+      
+    }
+  };
+}
+```
+3. Then we have to update the value of input for each function we execute on it.
+```
+function chained(functions){
+
+  return function(input){
+    for(let i = 0; i < functions.length; i++){
+      input = functions[i](input);
+    }
+  };
+}
+```
+Note: this might make our function impure if the input passed as reference (in case of objects and arrays). 
+4. Finally we return the final value.
+```
+function chained(functions){
+
+  return function(input){
+    for(let i = 0; i < functions.length; i++){
+      input = functions[i](input);
+    }
+    
+    return input;
+  };
+}
+```
 ## Calculating with Functions
 
 The task:
