@@ -32,13 +32,17 @@ const add = (n) => {
 We only got one thing to take care of now, the last call of our recursive function.
 
 Let's take a look of what happens so far with this example:
+
 `add(1)(2)(3)`
+
 The `add` function will be called with the number 1 as an argument, then it will call the `fx` function which will take the next number, 2, add 1 and 2 and call the add function, now with 3 as a sole argument. After the first call of the `add` function we will get:
 
 `add(3)(3)`
+
 Now same thing happens again and we will get:
 
 `add(6)`
+
 But this time the `fx` function won't get any arguments, since there are no more left. So the `add` will return a function, `fx`. But we need the value of `n` in this case. 
 
 Luckily for us functions are objects under the hood in JavaScript. Objects have a method called valueOf and if we create a valueOf method for the `fx` function it will return that value:
