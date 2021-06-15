@@ -127,7 +127,7 @@ Well, the first case is simple enough:
 ```javascript
 const zero = (op) => op ? : 0;
 ```
-We declare the zero function as a function that takes an op argument then we check if the argument is truthy or falthy. If we call the zero function without an argument we will get a falthy result as op will be undefined, however if we pass a function to the zero function then the op will be a function and the result will be truthy.
+We declare the zero function as a function that takes an op argument then we check if the argument is truthy or falsy. If we call the zero function without an argument we will get a falsy result as op will be undefined, however if we pass a function to the zero function then the op will be a function and the result will be truthy.
 
 Now what should we return if the result is truthy?
 
